@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: python-flask-v2-deploy
-  namespace: prueba
+  namespace: pruebas
 spec:
   selector:
     matchLabels:
