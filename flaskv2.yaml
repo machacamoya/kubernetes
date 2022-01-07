@@ -24,7 +24,7 @@ spec:
               name: cnfmap-flask
               readOnly: true
             - mountPath: /secret 
-              name: application-sensitive-config
+              name: secret-python-flask
               readOnly: true
           workingDir: /opt/app
       volumes:
@@ -35,6 +35,6 @@ spec:
         - name: cnfmap-flask
           configMap:
             name: cnfmap-python-flask
-        - name: application-sensitive-config
+        - name: secret-flask 
           secret:
-            secretName: application-sensitive-config
+            secretName: secret-python-flask 
